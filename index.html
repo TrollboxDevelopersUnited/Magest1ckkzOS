@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <title>Magest1ckkzOS - Magestick's cool website!</title>
+  </head>
+
+  <div class="notepad">
+    <img src="./icons/notepad.png" style="height: 48px;width: 48px;" onclick="document.getElementById('note').style.display = 'block'">
+    <p>Notepad</p>
+  </div>
+
+  <div class="notepad-window" id="note">
+    <div class="window active" style="max-width: 362px;" id="draggable">
+      <div class="title-bar">
+        <div class="title-bar-text">Notepad</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="document.getElementById('note').style.display = 'none'"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <ul role="menubar" class="can-hover">
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            File
+            <ul role="menu">
+              <li role="menuitem"><a id="save">Save</a></li>
+              <li role="menuitem"><a onclick="document.getElementById('note').style.display = 'none'">Exit</a></li>
+            </ul>
+          </li>
+        </ul>
+          <textarea rows="15" cols="52" id="text-area"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="wallpaper">
+    <img src="./icons/paint.png" style="height: 48px;width: 48px;" onclick="document.getElementById('wall').style.display = 'block'">
+    <p>Change<br>Wallpaper</p>
+  </div>
+
+  <div class="wallpaper-window" id="wall">
+  <div class="window active" style="max-width: 484px" id="draggable2">
+    <div class="title-bar">
+      <div class="title-bar-text">Change Wallpaper</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" onclick="document.getElementById('wall').style.display = 'none'"></button>
+      </div>
+    </div>
+    <div class="window-body has-space">
+      <p style="color: black;">Select the wallpaper below, then press OK.</p>
+      <div id="images">
+      <img src="https://get.wallhere.com/photo/illustration-digital-art-neon-abstract-circle-waveforms-light-wave-shape-line-number-computer-wallpaper-font-207352.jpg" width="150" onclick="img1()">
+      <img src="https://getwallpapers.com/wallpaper/full/3/d/5/1096427-vertical-windows-xp-pro-wallpaper-1920x1200-for-mac.jpg" width="150" onclick="img2()">
+      <img src="https://www.fonstola.ru/images/201309/fonstola.ru_113745.jpg" width="150" onclick="img3()">
+    </div>
+    <section class="field-row" style="justify-content: flex-end">
+      <button onclick="document.getElementById('wall').style.display = 'none'" class="default">OK</button>
+    </section>
+    </div>
+  </div>
+</div>
+
+      <div class = "watermark">Magest1ckkzOS<br>Pre-Alpha 0.0.01</div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>

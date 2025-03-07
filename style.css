@@ -1,0 +1,31 @@
+body {
+    background-color: teal;
+  }
+
+p {
+  margin-left: 3px;
+  color: white;
+}
+
+div.watermark{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.notepad-window{
+  display: none;
+}
+
+.wallpaper-window{
+  display: none;
+}
+
+#images{
+  white-space: nowrap;
+}
